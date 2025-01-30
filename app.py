@@ -11,7 +11,6 @@ def fetch_data(year: int = None, country: str = None, market: str = None):
     try:
         # Load CSV content into a pandas DataFrame
         df = pd.read_csv("https://pp2-awsdataeng-dev-useast1-raw.s3.us-east-1.amazonaws.com/total_data_csv/total_data.csv")
-
         print(df.shape[0])
         # Apply filters based on provided parameters
         if year is not None:
